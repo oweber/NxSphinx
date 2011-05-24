@@ -55,13 +55,13 @@ div.footer a {
 }
 
 div.related {
-    background-color: #CCC;
+    background-color: #76B41F;
     line-height: 30px;
-    color: #FFF;
+    color: #EEE;
 }
 
 div.related a {
-    color: #ffffff;
+    color: #EEE;
 }
 
 div.sphinxsidebar {
@@ -135,16 +135,25 @@ a:hover {
 
 /* -- body styles ----------------------------------------------------------- */
 
-div.body h1,
+div.body h1 {
+    font-family: 'Trebuchet MS', sans-serif;
+    background-color: #FFF;
+    font-weight: normal;
+    color: #76B41F;
+    border-bottom: 1px solid #ccc;
+    margin: 20px -20px 10px -20px;
+    padding: 3px 0 3px 10px;
+}
+
 div.body h2,
 div.body h3,
 div.body h4,
 div.body h5,
 div.body h6 {
     font-family: 'Trebuchet MS', sans-serif;
-    background-color: #E3E3E3;
+    background-color: #EEE;
     font-weight: normal;
-    color: #333333;
+    color: #3E3E3E;
     border-bottom: 1px solid #ccc;
     margin: 20px -20px 10px -20px;
     padding: 3px 0 3px 10px;
@@ -191,7 +200,7 @@ div.admonition ul, div.admonition ol {
 }
 
 div.note {
-    background-color: #eee;
+    background-color: #EEEEEE;
     border: 1px solid #ccc;
 }
 
@@ -219,10 +228,10 @@ p.admonition-title:after {
 
 pre {
     padding: 5px;
-    background-color: #eeffcc;
+    background-color: #EEFFEE;
     color: #333333;
     line-height: 120%;
-    border: 1px solid #ac9;
+    border: 1px solid #76B41F;
     border-left: none;
     border-right: none;
 }
