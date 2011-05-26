@@ -11,11 +11,15 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
-.. autoclass:: useful_1.MyPublicClass
-    :members:
+   intro
+   misc/tutorial
 
-.. autoclass:: useful_2.MyPublicClass
-    :members:
+.. automodule:: useful_1
+   :members:
+
+.. automodule:: useful_2
+   :members:
+   :undoc-members:
 
 Indices and tables
 ==================

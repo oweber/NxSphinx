@@ -23,7 +23,7 @@ body {
 }
 
 div.document {
-    background-color: #AAA;
+    background-color: #FFF;
 }
 
 div.documentwrapper {
@@ -36,13 +36,13 @@ div.bodywrapper {
 }
 
 div.body {
-    background-color: #ffffff;
+    background-color: #FFF;
     color: #000000;
     padding: 0 20px 30px 20px;
 }
 
 div.footer {
-    color: #ffffff;
+    color: #FFF;
     width: 100%;
     padding: 9px 0 9px 0;
     text-align: center;
@@ -50,14 +50,14 @@ div.footer {
 }
 
 div.footer a {
-    color: #ffffff;
+    color: #FFF;
     text-decoration: underline;
 }
 
 div.related {
-    background-color: #133f52;
+    background-color: #CCC;
     line-height: 30px;
-    color: #ffffff;
+    color: #FFF;
 }
 
 div.related a {
@@ -69,7 +69,7 @@ div.sphinxsidebar {
 
 div.sphinxsidebar h3 {
     font-family: 'Trebuchet MS', sans-serif;
-    color: #ffffff;
+    color: #000;
     font-size: 1.4em;
     font-weight: normal;
     margin: 0;

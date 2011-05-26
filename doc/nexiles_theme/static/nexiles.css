@@ -243,7 +243,13 @@ tt {
 }
 
 th {
-    background-color: #ede;
+    background-color: #EEFFEE;
+    border-bottom-color: #76B41F;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-color: #76B41F;
+    border-top-style: solid;
+    border-top-width: 1px;
 }
 
 .warning tt {
