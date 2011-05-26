@@ -42,7 +42,7 @@ docstrings will be included automatically.
 
 The two files index.rst and conf.py, which are located in the doc-folder, contain the main configuration.
 
-important note
+Important note
 --------------
 ::
 
@@ -78,7 +78,7 @@ Example *index.rst*
 
     .. automodule:: useful_2
         :members:
-        :undoc-option:
+        :undoc-members:
 
 
     Indices and tables
@@ -104,7 +104,6 @@ http://sphinx.pocoo.org/ext/autodoc.html#module-sphinx.ext.autodoc
     automodule
     autoclass
     autofunction
-    automethod
     autoattribute
     autoexception
 
@@ -147,3 +146,85 @@ The most important ones are:
 -   html_show_sourcelink = True, creates a link to the reST source of every page
 
 
+Special markup constructs
+-------------------------
+
+See also http://sphinx.pocoo.org/markup/para.html
+
+**note** - used to show important information
+::
+
+    .. note::
+
+        It is not recommended to use this function in conjunction with :func:´foo´.
+
+
+**warning** - used to show more important information
+::
+
+    .. warning::
+
+        This function is not failsafe and may corrupt your database.
+
+
+**rubric** - creates a paragraph heading without toc-entry
+::
+
+    .. rubric:: VERY USEFUL TITLE
+
+
+**centered** - creates a centered boldfaced line of text.
+::
+
+    .. centered:: LICENSE AGREEMENT
+
+**hlist** - creates a compact list displayed horizontally or with reduced spacing between items.
+::
+
+    .. hlist::
+        :columns: 3
+
+        * this
+        * is a
+        * short
+        * list
+
+**seealso** - creates a reference to modules or external documents
+::
+
+    .. seealso::
+
+        Module :py:mod:`zipfile`
+        Documentation of the :py:mod:`zipfile` standard module.
+
+
+**code-block** - creates a block of code
+::
+
+    .. code-block:: python
+
+        # This is some python code
+        a = 1
+        b = 2
+        print a + b
+
+
+**Interactive** sessions don't need special markup, just avoid >>> at end of the block
+::
+
+    >>> 1 + 2
+    3
+
+
+**Longer** code blocks can be included using
+
+::
+
+    .. literalinclude:: example.py
+        :language: python
+        :encoding: latin-1
+        :pyobject: Timer.start
+        :lines: 1,3,5-10,20-
+
+
+See also http://sphinx.pocoo.org/markup/code.html for code specific markup.
