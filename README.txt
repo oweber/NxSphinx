@@ -70,6 +70,9 @@ Example *index.rst*
     .. toctree::
         :maxdepth: 2
 
+        intro
+        misc/tutorial
+
     .. automodule:: useful_1
         :members:
 
@@ -77,8 +80,6 @@ Example *index.rst*
         :members:
         :undoc-option:
 
-    intro
-    misc/tutorial
 
     Indices and tables
     ==================
